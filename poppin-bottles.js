@@ -21,5 +21,9 @@ function getFreePopCountForCaps(numCaps) {
 }
 
 function getTotalBottles(investment) {
-  let purchasedBottles = getNumberOfBottlesForMoney(investment);
+  // On the initial purchase, get the amount of soda-pop bottles we can buy
+  return (investment * 2) - 5;
+  
 }
+
+console.log(getTotalBottles(20));
